@@ -13,6 +13,7 @@
             <th>Description</th>
             <th>Action</th>
           </thead>
+          <%= cl_image_tag @cocktail.photo.key%>
           <% @cocktail.doses.each do |dose| %>
             <tr>
               <td><%= dose.ingredient.name %></td>
@@ -31,7 +32,4 @@
       <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
     </div>
   </div>
-
-  <%= render "reviews/new", cocktail: @cocktail, review: @review %>
-
 </div>
