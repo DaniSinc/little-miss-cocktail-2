@@ -1,18 +1,13 @@
-<div class="banner-content">
-  <h1>Little Miss Cocktail</h1>
-  <p>Awesome beverages for developers nightlife</p>
-  <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary btn-lg" %>
-</div>
+<%= render 'components/navbar' %>
 <div class="container">
-  <div class="row">
+ <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-light btn-lg" %>
+  <div class="index-cards">
     <% @cocktails.each do | cocktail | %>
-
-    <%= link_to cocktail_path(cocktail) do %>
-    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
-    <h3><%= cocktail.name %></h3>
-    </div>
-    <% end %>
-
+      <%= link_to cocktail_path(cocktail) do %>
+      <div class="cocktail-card" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('<%= cl_image_path cocktail.photo.key %>')">
+        <h3><%= cocktail.name %></h3>
+      </div>
+      <% end %>
     <% end %>
   </div>
 </div>

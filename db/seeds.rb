@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 require 'open-uri'
 require 'json'
 
@@ -21,10 +22,3 @@ drinks = cocktails["drinks"]
 drinks.each do |drink|
     Ingredient.create(name: drink["strIngredient1"])
 end
-
-puts "Creating Cocktails"
-file = URI.open('https://images.unsplash.com/photo-1598373187432-c1ff06874ce8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60')
-cocktail = Cocktail.new(name: 'Madame Butterfly')
-cocktail.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-
-

@@ -1,0 +1,12 @@
+.index-cards {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cocktail-card {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+}
