@@ -16,3 +16,9 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+import { textWrapper } from '../components/moving_text';
+
+document.addEventListener('turbolinks:load', () => {
+    // Call your functions here, e.g:
+    textWrapper();
+});
