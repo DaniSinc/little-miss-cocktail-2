@@ -8,7 +8,7 @@
     <% @cocktails.each do | cocktail | %>
 
     <%= link_to cocktail_path(cocktail) do %>
-    <div class="card-category m-1" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('<%= cl_image_path cocktail.photo.key %>')">
+    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
     <h3><%= cocktail.name %></h3>
     </div>
     <% end %>
