@@ -1,5 +1,8 @@
 // Specific CSS for your home-page
-body {
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     background-color: black;
     h1, h2, h3 {
         color: white;

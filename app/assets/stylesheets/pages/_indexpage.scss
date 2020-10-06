@@ -1,7 +1,13 @@
+.index-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
 .index-cards {
     display: grid;
-    grid-row-gap: 50px;
+    grid-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 35px;
 }
 
 .cocktail-card {
@@ -9,8 +15,15 @@
     background-size: cover;
     background-position: center;
     height: 240px;
+    border: 1px white solid;
+    box-shadow: 1px 1px 10px #888888;
+    
 }
 
 .cocktail-card h3, a{
     text-decoration: none !important;
+}
+
+#cocktail-names {
+    line-height: 250px;
 }
