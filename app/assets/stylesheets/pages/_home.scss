@@ -3,7 +3,11 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: black;
+    background-image: url("https://images.unsplash.com/photo-1554050857-c84a8abdb5e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    // background: linear-gradient(-45deg, #250957,black, #030A46, black );
+    // background-size: 400% 400%;
+    // position: relative;
+    // animation: change 10s ease-in-out infinite;
     h1, h2, h3 {
         color: white;
     }
@@ -12,3 +16,15 @@ body, html {
     }
 
 }
+
+// @keyframes change {
+//     0%{
+//         background-position: 0 50%;
+//     }
+//     50% {
+//         background-position: 100% 50%;
+//     }
+//     100% {
+//         background-position: 0 50%;
+//     }
+// }

@@ -1,0 +1,16 @@
+.navbar-lmc {
+  justify-content: space-around;
+  background: black;
+  padding-top: 15px;
+  h1{
+      font-size: 40px;
+  }
+}
+
+.navbar-lmc .navbar-collapse {
+  flex-grow: 0;
+}
+
+#lines-navbar {
+    border-bottom: 1px white solid;
+}

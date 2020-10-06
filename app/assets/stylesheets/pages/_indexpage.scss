@@ -16,7 +16,10 @@
     background-position: center;
     height: 240px;
     border: 1px white solid;
-    box-shadow: 1px 1px 10px #888888;
+    box-shadow: 1px 1px 10px darkblue;
+    &:hover {
+    box-shadow: 1px 1px 10px white;
+    }
     
 }
 

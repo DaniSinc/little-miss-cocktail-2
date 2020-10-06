@@ -12,8 +12,10 @@
     padding: 10px 20px;
     text-align: center;
     &:hover {
-        color: black;
-        background-color: white;
-        border: 1px black solid;
-        transition: 0.3s;    }
+        color: white;
+        // background-color: grey;
+        // border: 1px black solid;
+        transition: 0.3s;
+        box-shadow: 1px 1px 10px white; 
+    }
 }
