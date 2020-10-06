@@ -112,4 +112,9 @@ footer {
     position: fixed;
     left: 0;
   }
+
+  .cocktail-row {
+    grid-template-columns: 1fr;
+    grid-gap: 7px;
+  }
 }
