@@ -30,3 +30,29 @@
 #cocktail-names {
     line-height: 250px;
 }
+
+@media (max-width: 576px) {
+    body{
+        width: 100vw;
+    }
+    .index-container {
+        max-width: 325px;
+        margin: none;
+    }
+    .index-cards {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 47px;
+    }
+    .cocktail-card {
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        border: 1px white solid;
+        box-shadow: 1px 1px 10px darkblue;
+        &:hover {
+        box-shadow: 1px 1px 10px white;
+        }
+    }
+}

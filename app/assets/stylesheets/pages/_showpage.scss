@@ -85,7 +85,7 @@ h3 {
 
 .back-delete {
   color: white;
-  padding-top: 10px;
+  padding-top: 5px;
   font-size: 15px;
   &:hover {
     color: grey;
@@ -94,6 +94,18 @@ h3 {
 }
 
 #back-delete {
-  display: flex;
-  justify-content: space-between;
+  margin-top: 30px;
+  border-top: 1px white solid;  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 576px) {
+  #back-delete {
+    margin-top: 30px;
+    padding-top: 8px;
+    border-top: 1px white solid;
+  } 
 }
