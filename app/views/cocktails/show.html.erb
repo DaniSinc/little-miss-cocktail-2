@@ -37,7 +37,8 @@
     </div>
   </div>
 
-<%= link_to "Back to all cocktails", root_path %>
-<%= link_to "Delete", @cocktail, method: :delete, data: { confirm: "Are you sure?" } %> 
-   
+<div id="back-delete">
+  <%= link_to "Back to all cocktails", root_path, class: "back-delete" %>
+  <%= link_to "Delete cocktail", @cocktail, method: :delete, data: { confirm: "Are you sure?" }, class: "back-delete"%> 
+</div>   
 </div>
