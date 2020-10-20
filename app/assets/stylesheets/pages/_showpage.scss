@@ -43,6 +43,19 @@ h3 {
   letter-spacing: 0.05em;
 }
 
+footer {
+  border-top: 1px white solid;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .cocktail-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -50,7 +63,7 @@ h3 {
 }
 
 .card-trip {
-  overflow: hidden;
+  // overflow: hidden;
   background-image: linear-gradient(grey, white);
   max-width: 466px;
   // box-shadow: 3px 3px 10px #888888;
@@ -90,19 +103,6 @@ h3 {
   }
 }
 
-footer {
-  border-top: 1px white solid;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 @media (max-width: 576px) {
   footer {
     margin-top: 30px;
@@ -116,5 +116,27 @@ footer {
   .cocktail-row {
     grid-template-columns: 1fr;
     grid-gap: 7px;
+  }
+
+  .card-trip {
+    img {
+      height: 240px;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+      display: flex;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 }
