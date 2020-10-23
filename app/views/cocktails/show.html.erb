@@ -9,7 +9,6 @@
         <h1><em><%= @cocktail.name %></em></h1>
         <div class="card-trip-infos">
           <table>
-            <h4>What you will need:</h4>
             <tbody>
               <thead>
                 <th>Ingredient</th>
@@ -39,7 +38,7 @@
 
 </div>
 <footer>
-  <div class="container">
+  <div class="container pb-3">
     <%= link_to "Back to all cocktails", root_path, class: "back-delete" %>
     <%= link_to "Delete cocktail", @cocktail, method: :delete, data: { confirm: "Are you sure?" }, class: "back-delete"%> 
   </div>

@@ -2,5 +2,5 @@
 <%= simple_form_for [cocktail, dose] do |f| %>
   <%= f.association :ingredient, input_html: {}, include_hidden: false %>
   <%= f.input :description %>
-  <%= f.button :submit, class: "add-button" %>
+  <%= f.button :submit, class: "add-button", id: "add-button-show" %>
 <% end %>
