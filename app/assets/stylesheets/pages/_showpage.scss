@@ -68,7 +68,7 @@ footer {
   // overflow: hidden;
   // background-image: linear-gradient(grey, white);
   background-color: #f8edeb;
-  max-width: 466px;
+  max-width: 400px;
   // box-shadow: 3px 3px 10px #888888;
   padding: 3px;
 
@@ -85,7 +85,7 @@ footer {
 }
 
 .card-trip > img {
-  height: 300px;
+  max-height: 300px;
   width: 100%;
   object-position: center;
   object-fit: cover;
